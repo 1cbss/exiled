@@ -1,0 +1,32 @@
+{
+  "series": [
+    {
+      "id": "my-first-series",
+      "title": "My First Anime Series",
+      "description": "A sci-fi adventure about a kid who hacks reality.",
+      "coverImage": "assets/thumbnails/series1-cover.jpg",
+      "episodes": [
+        {
+          "id": "s1e1",
+          "title": "Episode 1 – Awakening",
+          "number": 1,
+          "description": "The main character discovers a strange glitch in the sky.",
+          "videoUrl": "https://YOUR_B2_URL_HERE/series1-ep1.mp4",
+          "thumbnail": "assets/thumbnails/s1e1.jpg",
+          "duration": "12:34",
+          "releaseDate": "2025-01-01"
+        },
+        {
+          "id": "s1e2",
+          "title": "Episode 2 – Glitch City",
+          "number": 2,
+          "description": "They enter the city where reality is unstable.",
+          "videoUrl": "https://YOUR_B2_URL_HERE/series1-ep2.mp4",
+          "thumbnail": "assets/thumbnails/s1e2.jpg",
+          "duration": "13:10",
+          "releaseDate": "2025-01-08"
+        }
+      ]
+    }
+  ]
+}

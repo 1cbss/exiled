@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MyAnimeStream</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo" aria-label="MyAnimeStream logo">
+      <span class="brand-main">MyAnime</span><span class="accent">Stream</span>
+    </div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#">Home</a>
+      <a href="#">Series</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="player-section" aria-label="Video player">
+      <div class="player-wrapper">
+        <video id="videoPlayer" controls preload="metadata" poster="assets/thumbnails/series1-cover.jpg">
+          <source id="videoSource" src="" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      <div class="video-info">
+        <h1 id="videoTitle">Select an episode</h1>
+        <p id="videoDescription">Choose an episode from the list to start watching.</p>
+      </div>
+    </section>
+
+    <aside class="sidebar" aria-label="Episode list">
+      <div class="sidebar-header">
+        <h2>Episodes</h2>
+        <p class="sidebar-subtitle">Tap an episode to start watching</p>
+      </div>
+      <div id="episodeList" class="episode-list" role="list">
+      </div>
+      <div id="errorMessage" class="error-message" role="status" aria-live="polite"></div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> MyAnimeStream — All animations created by me.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
